@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  background-color: #eaeaea;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.menu > ul li {
+  float: right;
+  margin-right: 25px;
+}
+
+.menu > ul li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "menu menu menu menu menu"
+    "sidenav main main main main";
+  grid-gap: 15px;
+  padding: 10px;
+}
+
+.grid-container .menu {
+  grid-area: menu;
+  display: inline-block;
+}
+.grid-container .sidenav {
+  margin-top: 15px;
+  grid-area: sidenav;
+}
+.grid-container .main {
+  margin-top: 15px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  max-height: fit-content;
+  grid-area: main;
+}
+
+.content {
+  margin: 15px 10px 15px 10px;
+}
+
+.content .title {
+  font-weight: bold;
+  color: #585858;
+}
+/* .grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+} */
+
+.navbar {
+  height: 80px;
+  background-color: #1f577c;
+}
+
+.navbar .logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sidenav .nav1 {
+  background-color: #44728a;
+  color: #fff;
+}
+
+.nav1 .header {
+  background-color: #1f577c;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: left;
+}
+
+.nav1 .header > p {
+  margin-left: 15px;
+}
+
+.nav1 .list > ul li a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 12px;
+}
