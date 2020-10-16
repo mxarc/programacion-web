@@ -1,3 +1,8 @@
+html,
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
 header {
   text-align: center;
   margin-bottom: 100px;
@@ -7,6 +12,13 @@ header #logo {
 }
 a {
   color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 5px 0 5px 0;
 }
 
 nav {
@@ -44,4 +56,79 @@ nav ul li a {
   border-radius: 1px;
   height: 40px;
   margin-bottom: 50px;
+}
+
+.learn-more {
+  color: #7fcbc5;
+}
+
+.title {
+  padding-bottom: 20px;
+}
+
+.description {
+  margin-top: 25px;
+}
+
+section {
+  text-align: center;
+  margin-left: 165px;
+  margin-right: 700px;
+  font-size: 12x;
+}
+
+section .order {
+  margin-top: 400px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.hero {
+  width: 650px;
+  position: absolute;
+  top: 160px;
+  right: 90px;
+  z-index: -1;
+}
+
+footer {
+  display: block;
+  width: 100%;
+}
+
+footer section {
+  text-align: center;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+.footer1 {
+  width: 120px;
+  margin-left: 150px;
+}
+
+.footer2 {
+  width: 200px;
+  margin-left: 80px;
+}
+
+.footer3 {
+  width: 150px;
+  margin-left: 50px;
+}
+
+section .order {
+  margin-top: 200px;
+  top: 500px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.mt {
+  margin-top: 100px;
+  text-align: center;
 }
