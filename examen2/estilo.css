@@ -1,0 +1,47 @@
+header {
+  text-align: center;
+  margin-bottom: 100px;
+}
+header #logo {
+  width: 200px;
+}
+a {
+  color: inherit;
+}
+
+nav {
+  opacity: 0.7;
+  height: 70px;
+}
+nav ul {
+  display: inline-block;
+}
+
+nav ul li {
+  display: inline-block;
+  text-align: center;
+  margin: 0px 20px 0px 0px;
+  font-size: 20px;
+  border-bottom: 0.5px solid silver;
+  border-top: 0.5px solid silver;
+  padding: 10px;
+  list-style: none !important;
+  list-style-type: none !important;
+}
+
+nav ul li a {
+  color: #000;
+  text-decoration-color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.book-order {
+  font-family: "Times New Roman", Times, serif;
+  background-color: #e7bf58;
+  color: #fff;
+  border: none;
+  border-radius: 1px;
+  height: 40px;
+  margin-bottom: 50px;
+}
