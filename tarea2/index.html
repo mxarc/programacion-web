@@ -9,37 +9,163 @@
 </head>
 
 <body>
-  <nav class="navbar">
-    <img class="logo" src="./assets/dashboard.png" height="60">
-  </nav>
+  <header>
+    <nav class="navbar">
+      <img class="logo" src="./assets/dashboard.png" height="60">
+    </nav>
+    <div class="menu">
+      <ul>
+        <li><a href="#home">Settings</a></li>
+        <li><a href="#home">Messages</a></li>
+        <li><a href="#home">Notifications</a></li>
+      </ul>
+    </div>
+  </header>
   <main>
     <div class="grid-container">
-      <div class="menu">
-        <ul>
-          <li><a href="#home">Settings</a></li>
-          <li><a href="#home">Messages</a></li>
-          <li><a href="#home">Notifications</a></li>
-        </ul>
-      </div>
-      <div class="sidenav">
+      <aside class="sidenav">
         <div class="nav1">
           <div class="header">
             <p>Panel with Links</p>
           </div>
           <div class="list">
             <ul>
-              <li><a href="#home">Settings</a></li>
-              <li><a href="#home">Messages</a></li>
-              <li><a href="#home">Notifications</a></li>
+              <li>
+                <a href="#">
+                  <img src="assets/list.png" alt=""> Example
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="assets/list.png" alt=""> Example
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="assets/list.png" alt=""> Example
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="assets/list.png" alt=""> Example
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="assets/list.png" alt=""> Example
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="assets/list.png" alt=""> Example
+                </a>
+              </li>
             </ul>
           </div>
         </div>
-      </div>
+        <div class="nav2">
+          <div class="header">
+            <p>Panel with progress</p>
+          </div>
+          <div class="progress">
+            <p>Progress Bar</p>
+            <progress max="100" value="40" class="prog1"></progress>
+            <p>Progress Bar</p>
+            <progress max="100" value="50" class="prog2"></progress>
+            <p>Progress Bar</p>
+            <progress max="100" value="90" class="prog3"></progress>
+          </div>
+        </div>
+
+      </aside>
       <div class="main">
         <div class="content">
-          <p class="title">Simple cubes</p>
-          <p class="title">Panels</p>
-          <p class="title">Users</p>
+          <article id="cubes">
+            <p class="title">Simple cubes</p>
+            <div class="cubes">
+              <div class="cube green">
+                <div class="content">
+                  <img src="assets/payment.png" height="70px" alt="">
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
+              </div>
+
+              <div class="cube yellow">
+                <div class="content">
+                  <img src="assets/history.png" height="70px" alt="">
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
+              </div>
+              <div class="cube purple">
+                <div class="content">
+                  <img src="assets/list.png" height="70px" alt="">
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
+              </div>
+              <div class="cube red">
+                <div class="content">
+                  <img src="assets/module.png" height="70px" alt="">
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article id="panels">
+            <p class="title">Panels</p>
+            <div class="panels">
+              <div class="panel1">
+                <div>
+                  <h2>84%</h2>
+                </div>
+                <img src="assets/grafico.png" alt="">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="panel2">
+                <div>
+                  <h2>36%</h2>
+                </div>
+                <img src="assets/grafico.png" alt="">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="panel3">
+                <div>
+                  <h2>22%</h2>
+                </div>
+                <img src="assets/grafico.png" alt="">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+
+          </article>
+
+          <article id="users">
+            <p class="title">Users</p>
+            <div class="panels">
+              <div class="panel">
+                <img src="assets/user-1.png" alt="">
+                <button type="submit">Mensaje</button>
+              </div>
+              <div class="panel">
+                <img src="assets/user-2.png" alt="">
+                <div>
+                  <button type="submit">Mensaje</button>
+                </div>
+              </div>
+              <div class="panel">
+                <img src="assets/user-3.png" alt="">
+                <div>
+                  <button type="submit">Mensaje</button>
+                </div>
+              </div>
+              <div class="panel">
+                <img src="assets/user-4.png" alt="">
+                <div>
+                  <button type="submit">Mensaje</button>
+                </div>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </div>

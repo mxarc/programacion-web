@@ -32,17 +32,11 @@ ul {
 
 .grid-container {
   display: grid;
-  grid-template-areas:
-    "menu menu menu menu menu"
-    "sidenav main main main main";
+  grid-template-areas: "sidenav main main main main";
   grid-gap: 15px;
   padding: 10px;
 }
 
-.grid-container .menu {
-  grid-area: menu;
-  display: inline-block;
-}
 .grid-container .sidenav {
   margin-top: 15px;
   grid-area: sidenav;
@@ -56,19 +50,125 @@ ul {
 }
 
 .content {
-  margin: 15px 10px 15px 10px;
+  margin: 20px 10px 15px 25px;
 }
 
 .content .title {
   font-weight: bold;
+  font-size: 18px;
   color: #585858;
 }
-/* .grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
+
+.green {
+  background-color: #15b150;
+}
+
+.yellow {
+  background-color: #febf13;
+}
+
+.purple {
+  background-color: #702fa0;
+}
+
+.red {
+  background-color: #9e2736;
+}
+
+.cubes {
+  display: inline;
+  color: #fff;
   text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
-} */
+  font-size: 14px;
+}
+
+.cubes .cube {
+  border-radius: 10px;
+  height: auto;
+  max-width: 200px;
+  display: inline-block;
+  margin: 10px 15px 15px 15px;
+}
+
+.cubes .cube .content {
+  padding: 10px;
+}
+
+#panels .panels {
+  text-align: center;
+}
+
+#panels .panels img {
+  width: 90%;
+  padding-top: 5px;
+}
+
+#panels .panel1,
+#panels .panel2,
+#panels .panel3 {
+  display: inline-block;
+  width: 22%;
+  margin: 0 10px 0 10px;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+}
+
+#panels .panels p {
+  color: #b0afb4;
+}
+
+#panels .panel1 > div {
+  background-color: #bde8ef;
+}
+
+#panels .panel2 > div {
+  background-color: #fbeccd;
+}
+
+#panels .panel3 > div {
+  background-color: #ebccd1;
+}
+
+#panels .panel1 {
+  border: 2px solid #bde8ef;
+}
+
+#panels .panel2 {
+  border: 2px solid #fbeccd;
+}
+
+#panels .panel3 {
+  border: 2px solid #ebccd1;
+}
+
+/***/
+
+#users .panels img {
+  width: 50%;
+  border-radius: 50%;
+  padding-top: 5px;
+  padding-bottom: 40px;
+}
+
+#users button {
+  background-color: #c7dff3;
+  color: #fff;
+  border-radius: 5px;
+  border: 0;
+  height: 22px;
+  width: 90px;
+}
+
+#users .panel {
+  display: inline-block;
+  width: 22%;
+  margin: 0 10px 0 10px;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  background-color: #437b92;
+}
 
 .navbar {
   height: 80px;
@@ -81,20 +181,25 @@ ul {
   margin-right: auto;
 }
 
-.sidenav .nav1 {
+.nav1 {
   background-color: #44728a;
   color: #fff;
+  text-align: left;
+  margin: 0 40px 0 20px;
 }
 
 .nav1 .header {
   background-color: #1f577c;
   font-weight: bold;
-  font-size: 12px;
   text-align: left;
+  height: 40px;
+  padding: 2px 0 2px 17px;
 }
 
 .nav1 .header > p {
   margin-left: 15px;
+  font-size: 15px;
+  padding-top: 10px;
 }
 
 .nav1 .list > ul li a {
@@ -102,5 +207,64 @@ ul {
   text-align: center;
   text-decoration: none;
   font-weight: normal;
-  font-size: 12px;
+  font-size: 15px;
+  padding: 5px;
+}
+
+.nav1 .list > ul li img {
+  width: 10%;
+  padding-right: 2px;
+}
+
+.nav2 {
+  background-color: #fff;
+  color: #8d8d8d;
+  text-align: left;
+  margin: 20px 40px 0 20px;
+}
+
+.nav2 .header {
+  background-color: #1f577c;
+  font-weight: bold;
+  text-align: left;
+  height: 40px;
+  padding: 2px 0 2px 17px;
+}
+.nav2 .header > p {
+  color: #fff;
+  margin-left: 15px;
+  font-size: 15px;
+  padding-top: 10px;
+}
+
+.progress {
+  vertical-align: top;
+  padding: 1px 0 10px 17px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #3d3d3d;
+}
+
+.progress progress[value] {
+  height: 20px;
+  width: 80%;
+  appearance: none;
+  -webkit-appearance: none;
+  border: 1px solid silver;
+}
+
+.progress progress[value]::-webkit-progress-bar {
+  background-color: rgb(230, 230, 230);
+}
+
+.prog1[value]::-webkit-progress-value {
+  background-color: rgb(73, 36, 73);
+}
+
+.prog2[value]::-webkit-progress-value {
+  background-color: rgb(41, 99, 57);
+}
+
+.prog3[value]::-webkit-progress-value {
+  background-color: rgb(223, 123, 31);
 }
