@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h1>Peliculas</h1>
+    <h1>Películas</h1>
     <b-button variant="primary" class="float-right mb-3" to="/agregar-pelicula">
       Agregar
     </b-button>

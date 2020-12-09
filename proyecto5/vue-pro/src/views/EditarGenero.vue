@@ -13,7 +13,7 @@
         v-model="genero.genero"
         label="Nombre"
         id="nombre"
-        placeholder="Ingrese nombre de la persona"
+        placeholder="Ingrese nombre del género"
         mensajeError="El nombre es obligatorio"
         :error="erroresValidacion && !validacionNombre"
         class="mb-2"
