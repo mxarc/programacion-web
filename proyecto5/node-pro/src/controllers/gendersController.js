@@ -81,9 +81,16 @@ function deleteGender(req, res) {
   if (connection) {
     const { id } = req.params;
     let sql = 'DELETE FROM Generos WHERE id = ?';
-    connection.query(sql, [id], (err, rows) => {
+    console.log('deleting gender, id: ', id);
+    connection.query(sql, id, (err, rows) => {
       if (err) {
-        res.json(err);
+        console.log('error');
+        res.json({
+          error: true,
+          errorMessage: err,
+          message:
+            'No se pudo eliminar, hay películas que tienen este género asignado',
+        });
       } else {
         let message = '';
         if (rows.affectedRows === 0) {
@@ -91,7 +98,6 @@ function deleteGender(req, res) {
         } else {
           message = 'Genero eliminado con exito';
         }
-
         res.json({ error: false, data: rows, message });
       }
     });
